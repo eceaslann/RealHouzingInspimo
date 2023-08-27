@@ -1,0 +1,45 @@
+﻿@{
+    Layout = "~/Views/Shared/_DefaultLayout.cshtml";
+}
+
+
+<!doctype html>
+<html>
+
+
+
+
+<!-- main-slider -->
+@await Component.InvokeAsync("_MainArea")
+<!-- //main-slider -->
+<!--/w3l-properties-->
+@await Component.InvokeAsync("_WhatWeDo")
+<!--//w3l-properties-->
+<!--/bottom-3-grids-->
+@await Component.InvokeAsync("BuyorLease")
+<!--//bottom-3-grids-->
+<!--/grids-->
+@await Component.InvokeAsync("_VideoandAbout")
+<!--//grids-->
+<!--/w3-grids-->
+@await Component.InvokeAsync("_PostProperty")
+<!--//w3-grids-->
+<!-- features section -->
+@await Component.InvokeAsync("_Services")
+<!--//features section -->
+<!--/properties-->
+@await Component.InvokeAsync("_Properties")
+<!--//properties-->
+<!--/w3l-join-main-->
+@await Component.InvokeAsync("_JoinUs")
+<!--//w3l-join-main-->
+<!--/testimonials-->
+@await Component.InvokeAsync("_Testimonial")
+<!--//testimonials-->
+<!--/w3l-blog-->
+@await Component.InvokeAsync("_Blog")
+<!--//w3l-blog-->
+
+
+
+</html>

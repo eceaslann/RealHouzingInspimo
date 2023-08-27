@@ -1,0 +1,17 @@
+﻿@using RealHouzing.Consume.Models.CategoryModels;
+@model AddCategoryViewModel
+@{
+    ViewData["Title"] = "AddCategory";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1 class="container">Kategori Ekleme Sayfası</h1>
+
+<br />
+<form method="post" class="container">
+    <label>Kategori Adı</label>
+    <input type="text" asp-for="CategoryName" class="form-control" />
+    <br />
+    <button class="btn btn-outline-info">Kaydet</button>
+
+</form>

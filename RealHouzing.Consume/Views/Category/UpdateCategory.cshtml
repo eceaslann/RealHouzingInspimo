@@ -1,0 +1,20 @@
+﻿@using RealHouzing.Consume.Models.CategoryModels;
+@model UpdateCategoryViewModel
+@{
+    ViewData["Title"] = "UpdateCategory";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<h1 class="container">Kategori Güncelleme Sayfası</h1>
+
+<br />
+<form method="post" class="container">
+    @Html.HiddenFor(x=>x.CategoryID)
+    <label>Kategori Adı</label>
+    <input type="text" asp-for="CategoryName" class="form-control" />
+    <br />
+    <button class="btn btn-outline-info">Güncelle</button>
+
+</form>
