@@ -1,9 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using RealHouzing.EntityLayer.Concrete;
 
 namespace RealHouzing.DataAccessLayer.Concrete
 {
-    public class Context : DbContext
+    public class Context :  IdentityDbContext<AppUser,AppRole,int>
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -25,6 +26,8 @@ namespace RealHouzing.DataAccessLayer.Concrete
         public DbSet<VideoAndAbout> VideoAndAbouts { get; set; }
 
         public DbSet<About> Abouts { get; set; }
+
+         
        
     }
 }
